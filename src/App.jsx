@@ -51,8 +51,8 @@ function App() {
       {/* Header */}
 
 
-      <div style={{ backgroundImage: `url(${backPNG})` }} className="bg-cover bg-center min-h-screen text-white">
-        <div className=" h-screen relative px-8 max-w-[1200px] mx-auto">
+      <div style={{ backgroundImage: `url(${backPNG})` }} className="w-full bg-cover text-white">
+        <div className=" h-screen relative px-8 w-[1200px] mx-auto">
 
           <div className="flex justify-between items-center py-6">
             <img src={logo} alt="Logo" />
@@ -204,70 +204,79 @@ function App() {
       {/* Footer */}
 
 
-      <footer className="bg-[#1840A7] text-white py-8 px-12">
-        <div className="max-w-[1200px] mx-auto flex justify-between items-start">
-          {/* Logo Section */}
-          <div>
-            <img src={logo} alt="Logo" />
-          </div>
+    
 
-          {/* Navigation Links */}
-          <div className="flex space-x-16">
-            <ul className="text-sm mr-[60px] space-y-[10px]">
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> О компании
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Деятельность
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Персонал
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Клиенту
-              </li>
-            </ul>
 
-            <ul className="text-sm space-y-[10px]">
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Акционеру и инвестору
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Пресс-центр
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Торги
-              </li>
-              <li className="flex items-center gap-[10px]">
-                <span className="text-[25px]">▪</span> Контакты
-              </li>
-            </ul>
-          </div>
+    
 
-          {/* Location Section */}
-          <div className="text-sm">
-            <h3 className="font-semibold">Местонахождение</h3>
-            <p className="mt-2 max-w-xs">
-              Ante quam egestas tristique a malesuada massa aliquam ultrices. Et tellus nec.
-            </p>
-          </div>
-        </div>
 
-        {/* Bottom Footer Section */}
-        <div className="flex max-w-[1200px] mx-auto justify-between mt-[50px]">
-          <div>
-            <p className="text-xs opacity-50 cursor-pointer">
-              Dictum praesent dignissim pellentesque amet diam velit faucibus sed. Nec
-              mattis posuere <br /> habitasse porta feugiat mattis enim. Quam interdum at
-              penatibus amet elementum luctus.
-            </p>
-            <p className="mt-2 text-xs opacity-50 cursor-pointer">
-              Политика обработки персональных данных
-            </p>
-          </div>
-          <p className="text-xs opacity-50 text-right">Разработано: d-f-n.ru</p>
-        </div>
-      </footer>
+      <footer className="bg-[#1840A7] text-white py-8 px-12 w-full">
+  <div className="w-full flex justify-center">
+    <div className="max-w-[1200px] w-full flex justify-between items-start">
+      {/* Logo Section */}
+      <div>
+        <img src={logo} alt="Logo" />
+      </div>
+      
+      {/* Navigation Links */}
+      <div className="flex space-x-16">
+        <ul className="text-sm mr-[60px] space-y-[10px]">
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> О компании
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Деятельность
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Персонал
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Клиенту
+          </li>
+        </ul>
+        <ul className="text-sm space-y-[10px]">
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Акционеру и инвестору
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Пресс-центр
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Торги
+          </li>
+          <li className="flex items-center gap-[10px]">
+            <span className="text-[25px]">▪</span> Контакты
+          </li>
+        </ul>
+      </div>
+      
+      {/* Location Section */}
+      <div className="text-sm">
+        <h3 className="font-semibold">Местонахождение</h3>
+        <p className="mt-2 max-w-xs">
+          Ante quam egestas tristique a malesuada massa aliquam ultrices. Et tellus nec.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  {/* Bottom Footer Section */}
+  <div className="w-full flex justify-center mt-[50px]">
+    <div className="max-w-[1200px] w-full flex justify-between">
+      <div>
+        <p className="text-xs opacity-50 cursor-pointer">
+          Dictum praesent dignissim pellentesque amet diam velit faucibus sed. Nec
+          mattis posuere <br /> habitasse porta feugiat mattis enim. Quam interdum at
+          penatibus amet elementum luctus.
+        </p>
+        <p className="mt-2 text-xs opacity-50 cursor-pointer">
+          Политика обработки персональных данных
+        </p>
+      </div>
+      <p className="text-xs opacity-50 text-right">Разработано: d-f-n.ru</p>
+    </div>
+  </div>
+</footer>
 
 
     </div>
